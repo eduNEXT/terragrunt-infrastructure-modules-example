@@ -37,3 +37,11 @@ module "edxapp_djfs_bucket" {
   bucket = "${var.buckets_prefix}-djfs"
   acl    = "private"
 }
+
+module "edxapp_tracking_logs_bucket" {
+  source = "terraform-aws-modules/s3-bucket/aws"
+  version = "v1.12.0"
+
+  bucket = "${var.buckets_prefix}-tracking-logs"
+  acl    = "private"
+}
