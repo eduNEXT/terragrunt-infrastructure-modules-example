@@ -47,3 +47,23 @@ output "edxapp_djfs_bucket_arn" {
   description = "The ARN of the edxapp djfs bucket"
   value       = module.edxapp_djfs_bucket.this_s3_bucket_arn
 }
+
+output "edxapp_tracking_logs_bucket_id" {
+  description = "The name of the edxapp tracking logs bucket."
+  value       = module.edxapp_tracking_logs_bucket.this_s3_bucket_id
+}
+
+output "edxapp_tracking_logs_bucket_arn" {
+  description = "The ARN of the edxapp tracking logs bucket"
+  value       = module.edxapp_tracking_logs_bucket.this_s3_bucket_arn
+}
+
+output "edxapp_dbs_backups_bucket_id" {
+  description = "The name of the edxapp databases backups bucket."
+  value       = module.edxapp_dbs_backups_bucket.this_s3_bucket_id
+}
+
+output "edxapp_dbs_backups_bucket_arn" {
+  description = "The ARN of the edxapp databases backups bucket"
+  value       = module.edxapp_dbs_backups_bucket.this_s3_bucket_arn
+}

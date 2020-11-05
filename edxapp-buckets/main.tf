@@ -45,3 +45,12 @@ module "edxapp_tracking_logs_bucket" {
   bucket = "${var.buckets_prefix}-tracking-logs"
   acl    = "private"
 }
+
+module "edxapp_dbs_backups_bucket" {
+  source = "terraform-aws-modules/s3-bucket/aws"
+  version = "v1.12.0"
+
+  bucket = "${var.buckets_prefix}-databases-backups"
+  acl    = "private"
+  create_bucket = var.create_dbs_backup_bucket
+}
