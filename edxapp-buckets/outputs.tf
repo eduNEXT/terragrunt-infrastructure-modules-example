@@ -30,12 +30,12 @@ output "edxapp_profile_pictures_bucket_arn" {
 
 output "edxapp_import_export_bucket_id" {
   description = "The name of the edxapp import export bucket."
-  value       = module.edxapp_grades_bucket.this_s3_bucket_id
+  value       = module.edxapp_import_export_bucket.this_s3_bucket_id
 }
 
 output "edxapp_import_export_bucket_arn" {
   description = "The ARN of the edxapp import export bucket"
-  value       = module.edxapp_grades_bucket.this_s3_bucket_arn
+  value       = module.edxapp_import_export_bucket.this_s3_bucket_arn
 }
 
 output "edxapp_djfs_bucket_id" {
