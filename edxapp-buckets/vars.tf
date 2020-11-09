@@ -3,3 +3,9 @@ variable "buckets_prefix" {
   default     = "edxapp"
   type        = string
 }
+
+variable "create_dbs_backup_bucket" {
+  description = "Flag to enable databases backups bucket creation"
+  default     = false
+  type        = bool
+}
