@@ -9,3 +9,9 @@ variable "create_dbs_backup_bucket" {
   default     = false
   type        = bool
 }
+
+variable "uploads_cors_rule" {
+  description = "CORS rule for uploads bucket"
+  default     = []
+  type        = any
+}
