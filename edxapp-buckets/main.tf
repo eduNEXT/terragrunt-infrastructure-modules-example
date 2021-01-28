@@ -12,6 +12,8 @@ module "edxapp_uploads_bucket" {
 
   bucket = "${var.buckets_prefix}-uploads"
   acl    = "private"
+
+  cors_rule = "${var.uploads_cors_rule}"
 }
 
 module "edxapp_profile_pictures_bucket" {
